@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <title>Raag Sargam — Professional Singer &amp; Live Performer</title>
+    <meta
+      name="description"
+      content="Raag Sargam — professional singer and live performer for weddings, receptions, private parties, clubs, corporate events and college festivals. Your occasion. My voice. One unforgettable night."
+    />
+    <meta name="author" content="Raag Sargam" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Raag Sargam" />
+    <meta property="og:title" content="Raag Sargam — Professional Singer &amp; Live Performer" />
+    <meta
+      property="og:description"
+      content="Live vocals for weddings, receptions and celebrations. Your occasion. My voice. One unforgettable night."
+    />
+    <meta property="og:image" content="/images/hero_stage.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Raag Sargam — Professional Singer &amp; Live Performer" />
+    <meta
+      name="twitter:description"
+      content="Live vocals for weddings, receptions and celebrations. Your occasion. My voice. One unforgettable night."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      Two families, deliberately: Inter is the neo-grotesque that carries every
+      heading and body line (Apple-leaning), JetBrains Mono carries the metadata
+      — dates, badges, counters, status labels (Nothing-OS-leaning). No serif:
+      the display voice is a tight-tracked grotesque, not a didone.
+    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      Applied before first paint so a light-theme visitor never sees a dark
+      flash. Mirrors the STORAGE_KEY used by components/ThemeToggle.tsx.
+    -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("raag-sargam-theme");
+          var root = document.documentElement;
+          if (t === "light") {
+            root.classList.remove("dark");
+            root.classList.add("light");
+          } else {
+            root.classList.remove("light");
+            root.classList.add("dark");
+          }
+        } catch (e) {
+          /* storage unavailable — keep the dark default from the html tag */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding:2rem;color:#f5f5f7;background:#0a0a0a;font-family:sans-serif">
+        <h1>Raag Sargam — Professional Singer &amp; Live Performer</h1>
+        <p>
+          This site needs JavaScript for the full experience. Reach out at
+          <a href="mailto:shandip8638@gmail.com" style="color:#d71920">shandip8638@gmail.com</a> to book
+          a performance.
+        </p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
